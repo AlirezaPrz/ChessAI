@@ -42,18 +42,18 @@ def load_images() -> None:
     ]
     for piece in pieces:
         IMAGES[piece] = p.transform.scale(
-            p.image.load(f"../images/set2/{piece}.png"), (SQ_SIZE, SQ_SIZE)
+            p.image.load(f"images/set2/{piece}.png"), (SQ_SIZE, SQ_SIZE)
         )
 
     # Menu graphics
     IMAGES["background"] = p.transform.scale(
-        p.image.load("../images/start/background.JPEG"), (WIDTH, HEIGHT)
+        p.image.load("images/start/background.JPEG"), (WIDTH, HEIGHT)
     )
     # buttons: start, exit, pvp, bots, easy, medium, hard
     for btn in ["pvp", "bots", "easy", "medium", "hard"]:
-        IMAGES[btn] = p.image.load(f"../images/start/{btn}_btn.jpg")  # raw size
+        IMAGES[btn] = p.image.load(f"images/start/{btn}_btn.jpg")  # raw size
     for btn in ["start", "exit"]:
-        IMAGES[btn] = p.image.load(f"../images/start/{btn}_btn.png")  # raw size
+        IMAGES[btn] = p.image.load(f"images/start/{btn}_btn.png")  # raw size
         
 def get_bot_move(gs: chess_engine.GameState, difficulty: str) -> chess_engine.Move:
     """
