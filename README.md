@@ -31,7 +31,6 @@ https://github.com/user-attachments/assets/3cb21ea3-2ca0-4368-b279-89e59f8d2dd8
 1. **Clone the repo**  
    ```bash
    git clone https://github.com/AlirezaPrz/ChessAI.git
-   cd ChessAI/Chess
    ```
 
 2. **Create & activate a virtual environment**
@@ -54,6 +53,7 @@ https://github.com/user-attachments/assets/3cb21ea3-2ca0-4368-b279-89e59f8d2dd8
 ### 1. Train the (RL) Bots
 
 ```bash
+cd ChessAI/Chessbot
 python src/train_model.py
 ```
 
@@ -62,6 +62,7 @@ This will spin up the Gym environment, train the DQN agent, and save model weigh
 ### 2. Play against the AI
 
 ```bash
+cd ChessAI/Chessbot
 python src/chess_main.py
 ```
 
